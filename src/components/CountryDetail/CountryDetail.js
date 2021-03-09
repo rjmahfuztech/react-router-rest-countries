@@ -11,7 +11,7 @@ const CountryDetail = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => setCountryInfo(data));
-    }, []);
+    }, [countryName]);
     // console.log(countryInfo)
     return (
         <div>
