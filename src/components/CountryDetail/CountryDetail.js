@@ -14,7 +14,7 @@ const CountryDetail = () => {
     }, [countryName]);
     // console.log(countryInfo)
     return (
-        <div>
+        <div className="m-5">
             {
                 countryInfo.map(info => <CountryDetailInfo key={info.alpha3Code} info = {info}></CountryDetailInfo>)
             }

@@ -1,6 +1,7 @@
 import { Container } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import Country from '../Country/Country';
+import './Home.css';
 
 const Home = () => {
     const [countries, setCountries] = useState([]);
@@ -13,11 +14,11 @@ const Home = () => {
     }, []);
     // console.log(countries);
     return (
-        <Container maxWidth="sm">
+        <div className="home-style">
             {
                 countries.map(country => <Country key={country.alpha2Code} country={country}></Country>)
             }
-        </Container>
+        </div>
     );
 };
 

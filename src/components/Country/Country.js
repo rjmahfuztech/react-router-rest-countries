@@ -29,27 +29,29 @@ const Country = (props) => {
         history.push(url);
     }
     return (
-        <Card className={classes.root}>
-            <CardActionArea>
-                <CardMedia
-                    className={classes.media}
-                    image={flag}
-                    title="Contemplative Reptile"
-                />
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        Name: {name}
-                        <p>Capital: {capital}</p>
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
-            <CardActions>
-                <Button onClick={() => handleClick(name)} variant="contained" size="small" color="primary">
-                    Details
-                </Button>
-                {/* <p><Link to={`/country/${name}`}>Click</Link></p> */}
-            </CardActions>
-        </Card>
+        <div className="m-2 p-2">
+            <Card className={classes.root}>
+                <CardActionArea>
+                    <CardMedia
+                        className={classes.media}
+                        image={flag}
+                        title="Contemplative Reptile"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            Name: {name}
+                            <p>Capital: {capital}</p>
+                        </Typography>
+                    </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                    <Button onClick={() => handleClick(name)} variant="contained" size="small" color="primary">
+                        Details
+                    </Button>
+                    {/* <p><Link to={`/country/${name}`}>Click</Link></p> */}
+                </CardActions>
+            </Card>
+        </div>
     );
 };
 

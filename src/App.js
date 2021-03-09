@@ -8,25 +8,12 @@ import {
 } from "react-router-dom";
 import NotFound from './components/NotFound/NotFound';
 import CountryDetail from './components/CountryDetail/CountryDetail';
-import { Navbar } from 'react-bootstrap';
 
 function App() {
   return (
-
-    // <Navbar bg="dark">
-    //   <Navbar.Brand href="#home">
-    //     <img
-    //       src="/logo.svg"
-    //       width="30"
-    //       height="30"
-    //       className="d-inline-block align-top"
-    //       alt="React Bootstrap logo"
-    //     />
-    //   </Navbar.Brand>
-    // </Navbar>
-    <div className= "container">
+    <div className= "">
       <Router>
-        <nav className="nav-style pt-3 p-2 mb-3">
+        <nav className="nav-style pt-3 p-2 mb-3 sticky-top">
           <ul>
             <li>
               <Link className="nav-style2" to="/home">Home</Link>
