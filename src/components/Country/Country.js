@@ -29,7 +29,7 @@ const Country = (props) => {
         history.push(url);
     }
     return (
-        <div className="m-2 p-2">
+        <div className="m-3 p-2 text-center">
             <Card className={classes.root}>
                 <CardActionArea>
                     <CardMedia
