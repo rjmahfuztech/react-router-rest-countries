@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const CountryDetailInfo = (props) => {
     // console.log(props);
     const { name, nativeName, region, capital, subregion, flag } = props.info;
+    
     return (
         <div>
             <Container maxWidth="sm">
