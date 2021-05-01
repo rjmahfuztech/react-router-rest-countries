@@ -1,6 +1,6 @@
 # All Country Inofrmation
 
-<a href="https://rjmahfuztech.github.io/mahfuz-bank/">
+<a href="https://all-country-info-mi.netlify.app/">
   <img width="100%" height="100%" src="src/components/rest-countries.JPG">
 </a>
 
